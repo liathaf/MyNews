@@ -1,0 +1,9 @@
+<nav-bar/>
+<news-list *ngIf="articles.length">
+    <div *ngFor="let article of articles">
+    <h1>{{article.title}}</h1>
+    <p>{{article.source ? article.source.name? article.source.name : '-' : '-'}}</p>
+    <p>{{article.description ? article.description : '-'}}</p>
+    <img *ngIf="article.urlToImage" [src]="article.urlToImage"/>
+</div>
+<!-- <news-filter/> -->

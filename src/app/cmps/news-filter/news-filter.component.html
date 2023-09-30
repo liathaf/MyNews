@@ -1,0 +1,6 @@
+<p>news-filter works!</p>
+<!-- event binding -->
+<input type="text" (input)="onChangeFilter($event)"/>
+<!-- 2 way data binding -->
+<input type="text" [(ngModel)]="newsFilter"/>
+<p> You search for: {{newsFilter}}</p>
